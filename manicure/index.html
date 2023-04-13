@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>buetyful</title>
+    <script src="https://kit.fontawesome.com/97d1fee9c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="header">
+            <div class="logo"></div>
+            <!-- <div class="header-profile">
+                <img class="profile-img"
+                    src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt="">
+            </div> -->
+        </header>
+
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="side-wrapper">
+                    <div class="side-select">
+                        <div class="select-wrapper">
+                            <div class="side-title">Выбрать район</div>
+                            <div id="select" class="select">
+                                <div class="select-input">
+                                    Все районы
+                                </div>
+                                <div class="select-dropdown">
+                                    <ul class="select-list">
+                                        <li onclick="myfunc2()" class="select-item" data-id="all">Все районы</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="admiralteysky">
+                                            Адмиралтейский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="vasileostrovsky">
+                                            Василеостровский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="viborgsky">Выборгский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="kalininsky">Калининский
+                                        </li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="kirovsky">Кировский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="kolpinskiy">Колпинский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="krasnogvardeysky">
+                                            Красногвардейский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="krasnoselskiy">
+                                            Красносельский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="krondshtdskiy">Кронштадский
+                                        </li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="kurortny">Курортный</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="moskovsky">Московский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="nevsky">Невский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="petrogradsky">Петроградский
+                                        </li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="petrodvorcovy">
+                                            Петродворцовый</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="primorsky">Приморский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="pushkinsky">Пушкинский</li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="frunsenskiy">Фрунзенский
+                                        </li>
+                                        <li onclick="myfunc2()" class="select-item" data-id="centralny">Центральный</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="select-wrapper">
+                            <div class="side-title">Выбрать услугу</div>
+                            <div id="select" class="select">
+                                <div class="select-input">
+                                    Все
+                                </div>
+                                <div class="select-dropdown">
+                                    <ul class="select-list">
+                                        <li class="select-item" data-id="all">Все услуги</li>
+                                        <li class="select-item" data-id="manicure">Ногтевой сервис</li>
+                                        <li class="select-item inactiv" data-id="brows">Брови и ресницы</li>
+                                        <li class="select-item inactiv" data-id="sugar">Биоэпиляция, депиляция, шугаринг
+                                        </li>
+                                        <li class="select-item inactiv" data-id="massage">Массаж тела</li>
+                                        <li class="select-item inactiv" data-id="cosmetology">Эстетическая косметология
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="direct">
+                    <div class="dark-light">
+                        <div id="toggler" class="toggle-theme">
+                            <svg id="light" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                fill="currentColor" viewBox="0 0 16 16" style="display: block;">
+                                <path
+                                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg>
+                            <svg id="dark" viewBox="0 0 24 24" heighr="1em" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="direct-text">Для вопросов и предложений:</div>
+                    <a href="" class="direct-mail">hello@gmail.com</a>
+                </div>
+
+            </div> <!-- /left-side -->
+            <div class="main-container" id="containerScrll0">
+                <div class="intro">
+                    <div class="intro-text-wrapper">
+                        <h1 class="h1">Мастера ногтевого сервиса<br>в Санкт-Петербурге</h1>
+                        <div class="intro-text">Найдите мастера в Вашем районе и получите качественные услуги по
+                            выгодной цене</div>
+                    </div>
+                    <img class="intro-img" src="img/intro.png" alt="">
+                </div>
+                <div class="card-wrapper" id="card">
+
+                </div>
+            </div> <!-- /main-container -->
+        </div> <!-- /wrapper -->
+    </div>
+    <!-- /app -->
+
+
+    <script src="js/data-card.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
